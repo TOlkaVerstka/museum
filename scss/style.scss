@@ -1,3 +1,48 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:100,400,500,700);
 @import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
 @import "nullstyle.scss";
+
+
+header {
+   background-color: #030303;
+
+   .nav {
+      max-width: 1440px;
+      margin: 0 auto;
+      height: 150px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &__img {
+         width: 49px;
+         height: 26px;
+         margin: 0 10px 0 0;
+      }
+
+      &__name {
+         font-family: 'Forum';
+         font-size: 28px;
+         letter-spacing: 5px;
+         text-transform: uppercase;
+         color: #fff;
+      }
+
+      &__menu {
+         width: 53.82%;
+         display: flex;
+         justify-content: space-between;
+      }
+
+      &__item {
+         font-family: 'Roboto';
+         font-weight: 100;
+         font-size: 22px;
+         letter-spacing: 2px;
+
+         a {
+            color: #FFFFFF;
+         }
+      }
+   }
+}

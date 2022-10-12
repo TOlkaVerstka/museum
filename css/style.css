@@ -70,3 +70,41 @@ h1, h2, h3, h4, h5, h6 {
   font-size: inherit;
   font-weight: 400;
 }
+
+header {
+  background-color: #030303;
+}
+header .nav {
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .nav__img {
+  width: 49px;
+  height: 26px;
+  margin: 0 10px 0 0;
+}
+header .nav__name {
+  font-family: "Forum";
+  font-size: 28px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #fff;
+}
+header .nav__menu {
+  width: 53.82%;
+  display: flex;
+  justify-content: space-between;
+}
+header .nav__item {
+  font-family: "Roboto";
+  font-weight: 100;
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+header .nav__item a {
+  color: #FFFFFF;
+}
