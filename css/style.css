@@ -71,6 +71,23 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
+header .block-welcome__title h1, header .nav__name {
+  font-family: "Forum";
+  font-weight: 400;
+  line-height: 90px;
+  font-size: 80px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+header .block-welcome__title button, header .block-welcome__title p {
+  font-family: "Roboto";
+  font-weight: 300;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+}
+
 header {
   background-color: #030303;
 }
@@ -88,11 +105,8 @@ header .nav__img {
   margin: 0 10px 0 0;
 }
 header .nav__name {
-  font-family: "Forum";
   font-size: 28px;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  color: #fff;
+  line-height: normal;
 }
 header .nav__menu {
   width: 53.82%;
@@ -107,4 +121,38 @@ header .nav__item {
 }
 header .nav__item a {
   color: #FFFFFF;
+}
+header .block-welcome {
+  max-width: 1440px;
+  height: 750px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+header .block-welcome__title {
+  position: absolute;
+  z-index: 5;
+}
+header .block-welcome__title h1 {
+  margin: 0 0 25px 0;
+}
+header .block-welcome__title p {
+  font-size: 28px;
+}
+header .block-welcome__title button {
+  width: 360px;
+  height: 75px;
+  border-radius: 10px;
+  background-color: #710707;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 75px 0;
+  font-size: 22px;
+}
+header .block-welcome__carusel {
+  position: absolute;
+  right: 0;
 }
