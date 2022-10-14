@@ -67,7 +67,7 @@ header {
       }
    }
 
-   .block-welcome {
+   .welcome {
       max-width: 1440px;
       height: 810px;
       margin: 0 auto;
@@ -170,3 +170,65 @@ header {
       }
    }
 }
+
+.virtual-tour {
+   max-width: 1440px;
+   margin: 0 auto;
+
+   &__title {
+      @extend %title-style;
+      color: #9D8665;
+      border: 1px solid red;
+
+      &::after {
+         content: "";
+         width: 100%;
+         height: 20px;
+         color: #9D8665;
+      }
+   }
+   
+
+   &__cards {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+   }
+
+   &__card {
+      margin-bottom: 40px;
+      h3 {
+         font-family: 'Forum';
+         font-weight: 400;
+         font-size: 32px;
+         letter-spacing: 5px;
+         text-transform: uppercase;
+         color: #000000;
+         margin: 25px 0 0 0;
+      }
+
+      h3::after {
+         content: "";
+         display: block;
+         width: 70%;
+         height: 2px;
+         background-color: #710707;
+         margin: 10px 0;
+      }
+
+      p {
+         font-family: 'Roboto';
+         font-weight: 100;
+         font-size: 22px;
+         color: #000000;
+         margin: 10px 0;
+      }
+   }
+}
+
+// .virtual-tour__title::after {
+//    content: "";
+//    width: 200px;
+//    height: 200px;
+//    background-color: #bb1313;
+// }

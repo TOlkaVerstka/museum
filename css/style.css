@@ -71,7 +71,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
-header .block-welcome__title h1, header .nav__name {
+.virtual-tour__title, header .welcome__title h1, header .nav__name {
   font-family: "Forum";
   font-weight: 400;
   line-height: 90px;
@@ -81,14 +81,14 @@ header .block-welcome__title h1, header .nav__name {
   color: #FFFFFF;
 }
 
-header .block-welcome__title button, header .block-welcome__title p {
+header .welcome__title button, header .welcome__title p {
   font-family: "Roboto";
   font-weight: 300;
   letter-spacing: 2px;
   color: #FFFFFF;
 }
 
-header .block-welcome .pagination__arrows, header .block-welcome .pagination__cubes, header .block-welcome .pagination__numbers {
+header .welcome .pagination__arrows, header .welcome .pagination__cubes, header .welcome .pagination__numbers {
   display: flex;
   justify-content: space-between;
   text-align: center;
@@ -128,7 +128,7 @@ header .nav__item {
 header .nav__item a {
   color: #FFFFFF;
 }
-header .block-welcome {
+header .welcome {
   max-width: 1440px;
   height: 810px;
   margin: 0 auto;
@@ -137,17 +137,17 @@ header .block-welcome {
   align-items: center;
   position: relative;
 }
-header .block-welcome__title {
+header .welcome__title {
   position: absolute;
   z-index: 5;
 }
-header .block-welcome__title h1 {
+header .welcome__title h1 {
   margin: 0 0 25px 0;
 }
-header .block-welcome__title p {
+header .welcome__title p {
   font-size: 28px;
 }
-header .block-welcome__title button {
+header .welcome__title button {
   width: 360px;
   height: 75px;
   border-radius: 10px;
@@ -158,13 +158,13 @@ header .block-welcome__title button {
   margin: 75px 0;
   font-size: 22px;
 }
-header .block-welcome__carusel {
+header .welcome__carusel {
   position: absolute;
   z-index: 1;
   right: 0;
   bottom: 60px;
 }
-header .block-welcome .pagination {
+header .welcome .pagination {
   background-color: #030303;
   width: 41.667%;
   height: 120px;
@@ -176,7 +176,7 @@ header .block-welcome .pagination {
   justify-content: space-evenly;
   align-items: center;
 }
-header .block-welcome .pagination__numbers {
+header .welcome .pagination__numbers {
   width: 76px;
   font-family: "Roboto";
   font-weight: 400;
@@ -184,14 +184,61 @@ header .block-welcome .pagination__numbers {
   text-transform: uppercase;
   color: #FFFFFF;
 }
-header .block-welcome .pagination__cubes {
+header .welcome .pagination__cubes {
   width: 180px;
 }
-header .block-welcome .pagination__item {
+header .welcome .pagination__item {
   width: 16px;
   height: 16px;
   background-color: #FFFFFF;
 }
-header .block-welcome .pagination__arrows {
+header .welcome .pagination__arrows {
   width: 70px;
+}
+
+.virtual-tour {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.virtual-tour__title {
+  color: #9D8665;
+  border: 1px solid red;
+}
+.virtual-tour__title::after {
+  content: "";
+  width: 100%;
+  height: 20px;
+  color: #9D8665;
+}
+.virtual-tour__cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.virtual-tour__card {
+  margin-bottom: 40px;
+}
+.virtual-tour__card h3 {
+  font-family: "Forum";
+  font-weight: 400;
+  font-size: 32px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 25px 0 0 0;
+}
+.virtual-tour__card h3::after {
+  content: "";
+  display: block;
+  width: 70%;
+  height: 2px;
+  background-color: #710707;
+  margin: 10px 0;
+}
+.virtual-tour__card p {
+  font-family: "Roboto";
+  font-weight: 100;
+  font-size: 22px;
+  color: #000000;
+  margin: 10px 0;
 }
