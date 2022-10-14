@@ -88,6 +88,12 @@ header .block-welcome__title button, header .block-welcome__title p {
   color: #FFFFFF;
 }
 
+header .block-welcome .pagination__arrows, header .block-welcome .pagination__cubes, header .block-welcome .pagination__numbers {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
 header {
   background-color: #030303;
 }
@@ -124,7 +130,7 @@ header .nav__item a {
 }
 header .block-welcome {
   max-width: 1440px;
-  height: 750px;
+  height: 810px;
   margin: 0 auto;
   display: flex;
   justify-content: flex-start;
@@ -154,5 +160,38 @@ header .block-welcome__title button {
 }
 header .block-welcome__carusel {
   position: absolute;
+  z-index: 1;
   right: 0;
+  bottom: 60px;
+}
+header .block-welcome .pagination {
+  background-color: #030303;
+  width: 41.667%;
+  height: 120px;
+  position: absolute;
+  z-index: 4;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+header .block-welcome .pagination__numbers {
+  width: 76px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+header .block-welcome .pagination__cubes {
+  width: 180px;
+}
+header .block-welcome .pagination__item {
+  width: 16px;
+  height: 16px;
+  background-color: #FFFFFF;
+}
+header .block-welcome .pagination__arrows {
+  width: 70px;
 }

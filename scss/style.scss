@@ -19,6 +19,12 @@
    color: #FFFFFF;
 }
 
+%display-style {
+   display: flex;
+   justify-content: space-between;
+   text-align: center;
+}
+
 
 header {
    background-color: #030303;
@@ -63,7 +69,7 @@ header {
 
    .block-welcome {
       max-width: 1440px;
-      height: 750px;
+      height: 810px;
       margin: 0 auto;
       // background: linear-gradient(to left, #ffffff00, #ffffff00, #000000 72%);
       // , url(../assets/img/header-img.jpg) right/contain no-repeat
@@ -103,7 +109,9 @@ header {
 
       &__carusel {
          position: absolute;
+         z-index: 1;
          right: 0;
+         bottom: 60px;
          
          .carusel {
             
@@ -115,8 +123,50 @@ header {
       }
 
       .pagination {
-         
-      }
-}
+         background-color: #030303;
+         width: 41.667%;
+         height: 120px;
+         position: absolute;
+         z-index: 4;
+         right: 0;
+         bottom: 0;
+         display: flex;
+         justify-content: space-evenly;
+         align-items: center;
 
+         &__numbers {
+            width: 76px;
+            @extend %display-style;
+            font-family: 'Roboto';
+            font-weight: 400;
+            font-size: 22px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+
+         }
+
+         // &__numb {
+         // }
+
+         &__cubes {
+            width: 180px;
+            @extend %display-style;
+         }
+
+         &__item {
+            width: 16px;
+            height: 16px;
+            background-color: #FFFFFF;
+         }
+
+         &__arrows {
+            @extend %display-style;
+            width: 70px;
+
+            // img {
+            //    width: 30px;
+            // }
+         }
+      }
+   }
 }
