@@ -113,12 +113,12 @@ header {
          right: 0;
          bottom: 60px;
          
-         .carusel {
+         // .carusel {
             
-            img {
+         //    img {
                
-            }
-         }
+         //    }
+         // }
 
       }
 
@@ -178,16 +178,17 @@ header {
    &__title {
       @extend %title-style;
       color: #9D8665;
-      border: 1px solid red;
+      margin: 80px 0 0 0;
 
       &::after {
          content: "";
+         display: block;
          width: 100%;
-         height: 20px;
-         color: #9D8665;
+         height: 3px;
+         background-color: #9D8665;
+         margin: 40px 0;
       }
    }
-   
 
    &__cards {
       display: flex;
@@ -197,6 +198,7 @@ header {
 
    &__card {
       margin-bottom: 40px;
+
       h3 {
          font-family: 'Forum';
          font-weight: 400;
@@ -226,9 +228,72 @@ header {
    }
 }
 
-// .virtual-tour__title::after {
-//    content: "";
-//    width: 200px;
-//    height: 200px;
-//    background-color: #bb1313;
-// }
+.container {
+   background-color: #030303;
+}
+.picture-explore {
+   max-width: 1440px;
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
+
+		&__text {
+         width: 50%;
+         padding: 0 60px 0 0;
+
+         p {
+            font-family: 'Roboto';
+            font-weight: 300;
+            font-size: 22px;
+            line-height: 38px;
+            color: #FFFFFF;
+            margin: 25px 0 0 0;
+         }
+
+         span {
+            color: #CAAA7D;
+         }
+		}
+
+		&__title {
+         @extend %title-style;
+         margin: 80px 0 0 0 ;
+
+         &::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 3px;
+            background-color: #710707;
+            margin: 40px 0;
+         }
+		}
+
+		&__img {
+         width: 50%;
+         // height: 700px;
+         background: url(../assets/img/picture-explore/2.jpg) top/cover no-repeat;
+         margin: 80px 0;
+		}
+
+      &__img .img {
+         width: 440px;
+         height: 700px;
+         background: url(../assets/img/picture-explore/1.jpg) top/cover no-repeat;
+         border-right: 5px solid #FFFFFF;
+         position: relative;
+      }
+
+      &__img .img::after {
+         content: "";
+         display: inline-block;
+         height: 40px;
+         width: 40px;
+         border: 5px solid #FFFFFF;
+         border-radius: 50%;
+         position: absolute;
+         top: 50%;
+         right: -24px;
+         background-color: #000000;
+      }
+}
